@@ -15,13 +15,9 @@ function escreverNoInput(elemento){
 
     let listaOperacao = ['/','*','+','-'];
 
-//     if ( !(listaOperacao.includes(elemento)
-//     &&  listaOperacao.includes( conta[ conta.length -1 ] ) ) ) {
-        
-// }
     entrada.value = entrada.value + elemento;
 
-    // console.log(conta);
+
     
 
 }

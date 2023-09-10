@@ -32,7 +32,7 @@ body {
     height: 50.5rem;
 
     border-radius: 1.0rem;
-    margin: auto;
+    margin: 3rem auto auto auto;
 
 }
 
@@ -76,7 +76,8 @@ body {
 
 
     background-color: #00b8f000;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: black 2px 1px 1px;
 
     border: solid rgba(8, 142, 175, 0.87);
 
@@ -146,22 +147,14 @@ body {
     font-size: 1.7rem;
 }
 
-
-
-
-#barra-carregamento{
-
-    width: 9.0rem;
-    height: 9.0rem;
-
-    background: radial-gradient(circle,yellow,black);
-
-    margin: 1.5rem auto;
-
-    border-radius: 50%;
-
+@media (max-width: 412px) {
     
-    transition: 5s all;
+    body{
+        
+
+        margin-top: 17rem;
+    }
+
 }
 
 

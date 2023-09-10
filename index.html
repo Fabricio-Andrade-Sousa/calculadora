@@ -13,7 +13,6 @@
         <div id="tela">
             <input id="entrada" type="text">
         </div>
-        
         <button id="apagar" onclick="apagarExpressao()">Delete</button>
         <div id="butoes">
             <button class="numeros" onclick="escreverNoInput(7)">7</button>
@@ -34,5 +33,21 @@
         </div>
 
     </div>
+    <script>  
+
+        document.getElementById('entrada').addEventListener('keydown',function(event){
+
+            if (event.keyCode === 13){
+
+                mostrarResultado();
+
+            }else if (event.keyCode === 46){
+
+                apagarExpressao();
+            } 
+
+        });
+    
+    </script>
 </body>
 </html>
