@@ -34,6 +34,7 @@ body {
     border-radius: 1.0rem;
     margin: 3rem auto auto auto;
 
+    box-shadow:white 1px 0px 30px;
 }
 
 
@@ -109,14 +110,14 @@ body {
 }
 
 #igualdade{
-    width: 15.0rem;
+    
 
 
     background-color: rgb(42, 238, 42);
     
 
     
-    grid-column: span 2;
+    grid-column: span 1;
     
     
 }
@@ -147,4 +148,6 @@ body {
     font-size: 1.7rem;
 }
 
-
+#apagar:active{
+    background-color: rgb(219, 9, 9);
+}

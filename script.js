@@ -4,20 +4,23 @@ function escreverNoInput(elemento){
 
     let entrada = document.getElementById("entrada");
 
-    let valor = entrada.value;
-
-    let conta = [];
-
-    for (var i = 0; i < valor.length +1; i++){
-        console.log(valor);
-        conta.push(entrada[i]);
-    }
+    let resultado = entrada.value.split('');
 
     let listaOperacao = ['/','*','+','-'];
 
-    entrada.value = entrada.value + elemento;
+
+    if ( !(listaOperacao.includes(elemento) && (listaOperacao.includes(resultado[resultado.length - 1]))) ){
+
+        entrada.value = entrada.value + elemento;
+        
+    }
 
 
+
+
+
+
+    console.log(resultado);
     
 
 }
