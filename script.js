@@ -9,7 +9,8 @@ function escreverNoInput(elemento){
     let listaOperacao = ['/','*','+','-'];
 
 
-    if ( !(listaOperacao.includes(elemento) && (listaOperacao.includes(resultado[resultado.length - 1]))) ){
+    if ( !(listaOperacao.includes(elemento) && 
+    (listaOperacao.includes(resultado[resultado.length - 1]) )) ){
 
         entrada.value = entrada.value + elemento;
         
@@ -47,4 +48,25 @@ function apagarExpressao(){
 }
 
 
+function apagarUltimoNumero(){
 
+    let entrada = document.getElementById('entrada');
+    let expressao = entrada.value;
+
+
+
+    let novaEntrada = expressao.split('');
+    
+    novaEntrada.pop();
+    console.log(novaEntrada.length);
+
+    let expressaoConcatenada = '';
+
+    for ( i=0; i < novaEntrada.length; i++){
+        
+        expressaoConcatenada = expressaoConcatenada + novaEntrada[i];
+    }
+
+    entrada.value = expressaoConcatenada;
+
+}

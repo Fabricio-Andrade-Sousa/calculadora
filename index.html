@@ -6,31 +6,33 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Calculadora</title>
 </head>
 <body>
     <div id="principal">
         <div id="tela">
             <input id="entrada" type="text">
         </div>
-        <button id="apagar" onclick="apagarExpressao()">Delete</button>
+        
         <div id="butoes">
-            <button class="numeros" onclick="escreverNoInput(7)">7</button>
-            <button class="numeros" onclick="escreverNoInput(8)">8</button>
+            <button id="reset" onclick="apagarExpressao()">C</button>
+            <button id="apagar" onclick="apagarUltimoNumero()">&larr;</button>
+            <button class="numeros" onclick="escreverNoInput('/')">/</button>
             <button class="numeros" onclick="escreverNoInput(9)">9</button>
+            <button class="numeros" onclick="escreverNoInput(8)">8</button>
+            <button class="numeros" onclick="escreverNoInput(7)">7</button>
             <button class="numeros" onclick="escreverNoInput('-')">-</button>
-            <button class="numeros" onclick="escreverNoInput(4)">4</button>
-            <button class="numeros" onclick="escreverNoInput(5)">5</button>
             <button class="numeros" onclick="escreverNoInput(6)">6</button>
+            <button class="numeros" onclick="escreverNoInput(5)">5</button>
+            <button class="numeros" onclick="escreverNoInput(4)">4</button>
             <button class="numeros" onclick="escreverNoInput('*')">*</button>
-            <button class="numeros" onclick="escreverNoInput(1)">1</button>
-            <button class="numeros" onclick="escreverNoInput(2)">2</button>
             <button class="numeros" onclick="escreverNoInput(3)">3</button>
+            <button class="numeros" onclick="escreverNoInput(2)">2</button>
+            <button class="numeros" onclick="escreverNoInput(1)">1</button>
             <button class="numeros" onclick="escreverNoInput('+')">+</button>
             <button id="igualdade" class="numeros" onclick="mostrarResultado()">=</button>
-            <button class="numeros" onclick="escreverNoInput('.')">.</button>
             <button class="numeros" onclick="escreverNoInput(0)">0</button>
-            <button class="numeros" onclick="escreverNoInput('/')">/</button>
+            <button class="numeros" onclick="escreverNoInput('.')">.</button>
         </div>
 
     </div>
